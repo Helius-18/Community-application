@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="h-50 card bg-dark text-white">
+  <img src="/static/maxdefault.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.445);">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-4"></div> 
+        <div class="col-lg-4  p-5 bg-dark bg-opacity-75" >
+          <form action="post">
+            <div class="form-header border-bottom mb-4">
+              <h5 class="form-title">BVRIT COMMUNITY</h5>
+              <p class="opacity-75">Please fill in this form to create an account!</p>
+            </div>
+            <label for="username" class="mb-1">Username</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><span class="fa fa-user"></span></span>
+              <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <label for="email" class="mb-1">Email</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+              <input type="email" class="form-control" name="email" name="email" placeholder="Email">
+            </div>
+            
+            <label for="password" class="mb-1">Password</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"></i></span>
+              <input type="password" class="form-control" name="password" placeholder="password">
+            </div>
+            
+            <label for="confirmpassword" class="mb-1">Confim Password</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa fa-shield"></i></span></span>
+              <input type="confirmpassword" class="form-control" name="confirmpassword" placeholder="confirm password">
+            </div>
+            <div style="padding-left: 120px; padding-top: 10px; padding-bottom: 0px;"><button type="button" class="btn btn-outline-light">SignUp</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
